@@ -1,0 +1,57 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  color: wheat;
+  text-align: center;
+  margin: 35px auto;
+  display: block;
+  box-shadow: 3px 3px 15px #ccc;
+  h1 {
+    font-size: 7em;
+    font-weight: bold;
+  }
+  p {
+    font-size: 2em;
+    margin-top: 25px;
+    line-height: normal;
+  }
+}
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.banner {
+  text-align: center;
+  position: relative;
+  &__text {
+    font-size: 20;
+  }
+  &__image {
+    width: 100px;
+  }
+  &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: wheat;
+    text-decoration: none;
+    transition: all 0.3ms;
+    &:hover {
+      background-color: orange;
+    }
+  }
+}
